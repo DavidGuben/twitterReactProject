@@ -21,11 +21,11 @@ class App extends React.Component {
 
 const SearchWidget = (props) => {
   return (
-    <div>
-      <div className="row">
+    <div className="container">
         <div className="jumbotron">
           <h1>Twitter Alt</h1>
         </div>
+        <div className="row">
         <div className="col-md-6">
           <h1>{props.txt}</h1>
         </div>
