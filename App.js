@@ -12,7 +12,7 @@ class App extends React.Component {
   }
   render(){
     return (
-    <div>
+    <div className="container">
       <SearchWidget txt={this.state.txt} update={this.update} />
       <Button></Button>
     </div>
@@ -28,15 +28,13 @@ class Button extends React.Component {
 
 const SearchWidget = (props) => {
   return (
-    <div className="container">
-        <div className="jumbotron">
-          <h1>Twitter Alt</h1>
-        </div>
-        <div className="row">
-          <h1>{props.txt}</h1>
-          <input type="text"
-          onChange={props.update} />
+    <div>
+      <div className="jumbotron">
+        <h1>Twitter Alt</h1>
       </div>
+      <h1>{props.txt}</h1>
+      <input type="text"
+      onChange={props.update} />
     </div>
   );
 }
