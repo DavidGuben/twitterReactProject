@@ -14,7 +14,7 @@ class App extends React.Component {
         {id: 4, name: "David Gubert"},
         {id: 5, name: "David Guren"},
         {id: 6, name: "David Greel"},
-        {id: 7, name: "David Gubenstein"},
+        {id: 7, name: "David Gubenstein"}
       ]
     }
     this.update = this.update.bind(this)
